@@ -1,6 +1,6 @@
 {
   "name": "extern-constantify",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "a transform for browserify, which allows the replacement of (undeclared/implicit) CONSTANTS with values based on an external configuration",
   "main": "index.js",
   "scripts": {
