@@ -4,7 +4,7 @@
   "description": "a transform for browserify, which allows the replacement of (undeclared/implicit) CONSTANTS with values based on an external configuration",
   "main": "index.js",
   "scripts": {
-    "test": "echo 'Error: no tests written yet' && exit 1"
+    "test": "node ./tests.js | tap-spec"
   },
   "repository": {
     "type": "git",
@@ -12,7 +12,11 @@
   },
   "keywords": [
     "browserify",
-    "browserify-transform"
+    "browserify-transform",
+    "transform",
+    "constants",
+    "source",
+    "inline"
   ],
   "author": "Adriaan Callaerts <adriaan.callaerts@gmail.com>",
   "license": "MIT",
@@ -21,7 +25,10 @@
   },
   "homepage": "https://github.com/call-a3/extern-constantify",
   "dependencies": {
-    "esprima": "^1.2.2",
-    "through2": "^0.6.3"
+    "browserify-transform-tools": "^1.2.1"
+  },
+  "devDependencies": {
+    "tap-spec": "^1.0.1",
+    "tape": "^3.0.1"
   }
 }
